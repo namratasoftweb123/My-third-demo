@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose="0" name="Failed suite [Parallel test suite]" parallel="classes">
+  <parameter name="browserName" value="chrome"/>
+  <parameter name="updateOnJira" value="true"/>
+  <parameter name="url" value="https://accounts.google.com/signin"/>
+  <test name="Exostar Core Part - Node - 1(failed)" parallel="classes">
+    <parameter name="browserName" value="chrome"/>
+    <parameter name="url" value="https://accounts.google.com/signin"/>
+    <classes>
+      <class name="org.exostar.ts.LoginTC">
+        <methods>
+          <include name="LoginTest_10024"/>
+          <include name="launchBrowser"/>
+          <include name="beforeSuite"/>
+          <include name="terminateBrowser"/>
+        </methods>
+      </class> <!-- org.exostar.ts.LoginTC -->
+    </classes>
+  </test> <!-- Exostar Core Part - Node - 1(failed) -->
+</suite> <!-- Failed suite [Parallel test suite] -->

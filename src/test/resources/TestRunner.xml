@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel test suite" parallel="classes" thread-count="1">
+    <parameter name="updateOnJira" value="false"/>
+    <test name="AltraMotion Core Part - Node - 1">
+        <parameter name="browserName" value="chrome"/>
+        <parameter name="url" value="http://192.168.3.61/sitecore/login"/>
+        <classes>
+            <class name="org.AltraMotion.ts.LoginTC">
+                <methods><include name="LoginTest()"></include></methods>
+            </class>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel test suite" parallel="classes" thread-count="1">
+    <parameter name="updateOnJira" value="true"/>
+    <test name="Exostar Core Part - Node - 1">
+        <parameter name="browserName" value="chrome"/>
+        <parameter name="url" value="https://accounts.google.com/signin"/>
+        <classes>
+            <class name="org.AltraMotion.ts.LoginTC">
+                <methods>
+                    <include name="EditTradeShowsAndVerifyInAltraApp()"></include>
+                </methods>
+            </class>
+        </classes>
+
+    </test>
+</suite>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="2" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Parallel test suite" duration-ms="45033" started-at="2018-02-22T10:30:09Z" finished-at="2018-02-22T10:30:54Z">
+    <groups>
+    </groups>
+    <test name="Exostar Core Part - Node - 1" duration-ms="45033" started-at="2018-02-22T10:30:09Z" finished-at="2018-02-22T10:30:54Z">
+      <class name="org.exostar.ts.LoginTC">
+        <test-method status="PASS" signature="beforeSuite(boolean)[pri:0, instance:org.exostar.ts.LoginTC@1b6d4ae]" name="beforeSuite" is-config="true" duration-ms="1159" started-at="2018-02-22T16:00:08Z" finished-at="2018-02-22T16:00:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="launchBrowser(org.testng.ITestResult, java.lang.reflect.Method, java.lang.String, java.lang.String)[pri:0, instance:org.exostar.ts.LoginTC@1b6d4ae]" name="launchBrowser" is-config="true" duration-ms="11436" started-at="2018-02-22T16:00:09Z" finished-at="2018-02-22T16:00:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LoginTest_10023 status=SUCCESS method=LoginTC.LoginTest_10023()[pri:0, instance:org.exostar.ts.LoginTC@1b6d4ae] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void org.exostar.ts.LoginTC.LoginTest_10023()]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[https://accounts.google.com/signin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="LoginTest_10023()[pri:0, instance:org.exostar.ts.LoginTC@1b6d4ae]" name="LoginTest_10023" duration-ms="2476" started-at="2018-02-22T16:00:21Z" finished-at="2018-02-22T16:00:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest_10023 -->
+        <test-method status="PASS" signature="terminateBrowser(org.testng.ITestResult)[pri:0, instance:org.exostar.ts.LoginTC@1b6d4ae]" name="terminateBrowser" is-config="true" duration-ms="1307" started-at="2018-02-22T16:00:23Z" finished-at="2018-02-22T16:00:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LoginTest_10023 status=SUCCESS method=LoginTC.LoginTest_10023()[pri:0, instance:org.exostar.ts.LoginTC@1b6d4ae] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateBrowser -->
+        <test-method status="PASS" signature="launchBrowser(org.testng.ITestResult, java.lang.reflect.Method, java.lang.String, java.lang.String)[pri:0, instance:org.exostar.ts.LoginTC@1b6d4ae]" name="launchBrowser" is-config="true" duration-ms="8348" started-at="2018-02-22T16:00:25Z" finished-at="2018-02-22T16:00:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LoginTest_10024 status=FAILURE method=LoginTC.LoginTest_10024()[pri:0, instance:org.exostar.ts.LoginTC@1b6d4ae] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void org.exostar.ts.LoginTC.LoginTest_10024()]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[https://accounts.google.com/signin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="FAIL" signature="LoginTest_10024()[pri:0, instance:org.exostar.ts.LoginTC@1b6d4ae]" name="LoginTest_10024" duration-ms="20289" started-at="2018-02-22T16:00:33Z" finished-at="2018-02-22T16:00:53Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[User not able to enter Password expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: User not able to enter Password expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:286)
+	at org.exostar.ts.LoginTC.LoginTest_10024(LoginTC.java:54)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest_10024 -->
+        <test-method status="PASS" signature="terminateBrowser(org.testng.ITestResult)[pri:0, instance:org.exostar.ts.LoginTC@1b6d4ae]" name="terminateBrowser" is-config="true" duration-ms="905" started-at="2018-02-22T16:00:53Z" finished-at="2018-02-22T16:00:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LoginTest_10024 status=FAILURE method=LoginTC.LoginTest_10024()[pri:0, instance:org.exostar.ts.LoginTC@1b6d4ae] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateBrowser -->
+      </class> <!-- org.exostar.ts.LoginTC -->
+    </test> <!-- Exostar Core Part - Node - 1 -->
+  </suite> <!-- Parallel test suite -->
+</testng-results>
