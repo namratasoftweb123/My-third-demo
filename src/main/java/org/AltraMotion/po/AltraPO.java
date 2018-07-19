@@ -62,7 +62,7 @@ public class AltraPO extends BaseTest {
 
     public By login_username_input = By.xpath("//input[@name='UserName']");
     public By login_password_input = By.name("Password");
-    public By Login_Btn = By.xpath("//input[@value='Logss in']");
+    public By Login_Btn = By.xpath("//input[@value='Log in']");
     public By ContentEditor_Btn = By.xpath("//a[@title='Content Editor']//descendant::img[@alt='Content Editor']");
     public By ContentMenu=By.xpath("//img[@id='Tree_Glyph_0DE95AE441AB4D019EB067441B7C2450']");
     public By CorporateArrowLink = By.xpath("//img[@id='Tree_Glyph_6A9E9331DA3F404F88101B6344FDE2D9']");
